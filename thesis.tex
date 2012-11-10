@@ -6,19 +6,7 @@
 % ****************************************************************************************** %
 
 
-%%% For print copies
-%% set 'singlespace' option to set entire thesis to single space, and define "\printmode" to remove all hyperlinks for printed copies of the thesis. Delete all output files before changing this mode -- it will turn hyperref package on and off
-%\documentclass[12pt,lot, lof, singlespace]{puthesis}
-%\newcommand{\printmode}{}
-
-%%% For the electronic copy, use doublespacing, define "\proquestmode" to use outlined links, instead of colored links. 
-\documentclass[12pt,lot, lof]{quthesis}
-\newcommand{\proquestmode}{}
-% I prefer proquestmode to be off for electronic copies for normal use, since the colored links are less distracting. However when printed in black and white, the colored links are difficult to read. 
-
-%%% For early drafts without some of the frontmatter
-% Also see the "ifodd" command below to disable more frontmatter
-%\documentclass[12pt]{puthesis}
+\documentclass[12pt,lot,lof]{quthesis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Author & title page info
@@ -85,54 +73,8 @@
 % default caption width is 4in for longtable, but wider for normal tables
 \setlength{\LTcapwidth}{\textwidth}
 
-
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% Printed vs. online formatting
-\ifdefined\printmode
-
-% Printed copy
 % url package understands urls (with proper line-breaks) without hyperlinking them
 \usepackage{url}
-
-
-\else
-
-\ifdefined\proquestmode
-%ProQuest copy -- http://www.princeton.edu/~mudd/thesis/Submissionguide.pdf
-
-% ProQuest requires a double spaced version (set previously). They will take an electronic copy, so we want links in the pdf, but also copies may be printed or made into microfilm in black and white, so we want outlined links instead of colored links.
-\usepackage{hyperref}
-\hypersetup{bookmarksnumbered}
-
-% copy the already-set title and author to use in the pdf properties
-\makeatletter
-\hypersetup{pdftitle=\@title,pdfauthor=\@author}
-\makeatother
-
-\else
-% Online copy
-
-% adds internal linked references, pdf bookmarks, etc
-
-% turn all references and citations into hyperlinks:
-%  -- not for printed copies
-% -- automatically includes url package
-% options:
-%   colorlinks makes links by coloring the text instead of putting a rectangle around the text.
-\usepackage{hyperref}
-\hypersetup{colorlinks,bookmarksnumbered}
-
-% copy the already-set title and author to use in the pdf properties
-\makeatletter
-\hypersetup{pdftitle=\@title,pdfauthor=\@author}
-\makeatother
-
-% make the page number rather than the text be the link for ToC entries
-%\hypersetup{linktocpage}
-\fi % proquest or online formatting
-\fi % printed or online formatting
-
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Define commands
@@ -189,16 +131,6 @@ Here are people to dedicate to.
 }
 
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
-%%%% Hide some chapters
-
-%%% If you want to produce a pdf that includes only certain chapters, specify them with includeonly, in addition to including all chapters below.
-%\includeonly{ch-intro/chapter-intro}
-%%% You can also specify multiple chapters.
-%\includeonly{ch-intro/chapter-intro,ch-usage/chapter-usage}
-%\includeonly{chap1,chap2,chap3}
-
-
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%% Notes:
 
@@ -207,14 +139,12 @@ Here are people to dedicate to.
 % The proper usage for i.e., and e.g., include commas ``(e.g., option A, option B)''
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%% Import chapters
+%%%% Let's build the real document
 
 \begin{document}
 
 \makefrontmatter
 
-
-% \include lets us split up the document (and each include starts a new page):
 \chapter{Introduction}
 This document gives you an example of how to produce your Qatar 
 University thesis in Latex.  Be sure to read the 
