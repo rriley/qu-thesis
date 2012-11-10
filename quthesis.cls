@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
-\ProvidesClass{puthesis}
-         [2008/05/02 v1.4 Princeton University Thesis class]
+\ProvidesClass{quthesis}
+         [2012/11/10 Qatar University Thesis class]
 \RequirePackage{setspace}
 \newcounter{subyear}
 \setcounter{subyear}{\number\year}
@@ -13,10 +13,18 @@
 \def\@copyrightyear{\number\year}
 \def\adviser#1{\gdef\@adviser{#1}}
 \long\def\@abstract{\@latex@error{No \noexpand\abstract given}\@ehc}
+\newcommand{\ps@quthesis}{
+  \renewcommand{\@oddhead}{}% header blank
+  \renewcommand{\@evenhead}{}% header blank
+  \renewcommand{\@oddfoot}{\hfill-\thepage-\hfill}%
+  \renewcommand{\@evenfoot}{\hfill-\thepage-\hfill}%
+}
 \newcommand*{\frontmatter}{
   \pagenumbering{roman}
   }
-\newcommand*{\mainmatter}{\pagenumbering{arabic}}
+\newcommand*{\mainmatter}{
+  \pagenumbering{arabic}
+  }
 \newcommand*{\makelot}{}
 \newcommand*{\makelof}{}
 \newcommand*{\makelos}{}
@@ -48,9 +56,9 @@
 %%   to be declared from within the document itself. 
 \newcommand*{\makefrontmatter}{
 \bodyspacing
-\frontmatter\maketitlepage\makecopyrightpage\makeabstract
-\makeacknowledgements\makededication\maketoc
-\makelot\clearpage\makelof\clearpage\makelos
+\frontmatter\maketitlepage\makecommittee\makeabstract
+\maketoc\makelot\clearpage\makelof\clearpage\makelos
+\makeacknowledgements\makededication
 \clearpage\mainmatter
 }
 \def\@submitted{\@submittedmonth~\@submittedyear}
@@ -58,11 +66,13 @@
 \def\@deptpref{Department of}
 \def\departmentprefix#1{\gdef\@deptpref{#1}}
 \def\department#1{\gdef\@dept{#1}}
+\def\college#1{\gdef\@college{#1}}
+\def\degree#1{\gdef\@degree{#1}}
 \long\def\acknowledgements#1{\gdef\@acknowledgements{#1}}
 \def\dedication#1{\gdef\@dedication{#1}}
 \newcommand{\maketitlepage}{{
   \thispagestyle{empty}
-  \sc
+  %\sc
   \vspace*{0in}
   \begin{center}
   QATAR UNIVERSITY
@@ -73,7 +83,7 @@
   \end{center}
   \vspace{.3in}
   \begin{center}
-  College of FIXME
+  \@college
   \end{center}
   \vspace{.6in}
   \begin{center}
@@ -90,7 +100,7 @@
   \vspace{.3in}
   \extravspace{.3in}
   \begin{center}
-	\copyright\ \@copyrightyear \@author  
+	\copyright\ \@copyrightyear\ \@author  
   \end{center}
   \vspace{.3in}
   \extravspace{.3in}
@@ -98,7 +108,7 @@
     Submitted in Partial Fulfillment \\
     of the Requirements \\
     for the Degree of \\
-    FIX ME \\
+    \@degree \\
   \end{center}
   \vspace{.3in}
   \extravspace{.3in}
@@ -107,17 +117,39 @@
   \end{center}
   \clearpage
   }}
-\newcommand*{\makecopyrightpage}{
-  \thispagestyle{empty}
-  \vspace*{0in}
+\newcommand*{\makecommittee}{
+  \newpage
+  %\addcontentsline{toc}{section}{Committee}
   \begin{center}
-    \copyright\ Copyright by \@author, \@copyrightyear. \\
-    All rights reserved.
+  \Large \textbf{Committee}
   \end{center}
-  \clearpage}
+  The thesis of \@author\ was reviewed and approved by the following:
+  We, the committee members listed below accept and approve the
+  Thesis/Dissertation of the student named above. To the best of this
+  committee’s knowledge, the Thesis/Dissertation conforms the requirements
+  of Qatar University, and we endorse this Thesis for examination.
+
+  \vspace{0.2in}
+  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+
+  \vspace{0.1in}  
+  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+
+  \vspace{0.2in}
+  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+
+  \vspace{0.1in}  
+  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+    
+  \vspace{0.2in}
+  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+
+  \vspace{0.1in}  
+  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+}
 \newcommand*{\makeabstract}{
   \newpage
-  \addcontentsline{toc}{section}{Abstract}
+  %\addcontentsline{toc}{section}{Abstract}
   \begin{center}
   \Large \textbf{Abstract}
   \end{center}
@@ -144,10 +176,11 @@
 \def\makededication{
   \ifx\@dedication\undefined
   \else
-    \vspace*{1.5in}
-    \begin{flushright}
+    \addcontentsline{toc}{section}{Dedication}
+    \begin{center}
+      \Large \textbf{Dedication}
+    \end{center}
       \@dedication
-    \end{flushright}
     \clearpage
   \fi
   }
@@ -211,9 +244,20 @@
 %%% http://www.tex.ac.uk/cgi-bin/texfaq2html?label=overfull
 \setlength{\emergencystretch}{2em}
 
+%%% Some code to put the page number in the right place.
+%%% This is dirty and probably broken.
+\renewcommand{\ps@plain}{
+  \renewcommand{\@oddhead}{}% header blank
+  \renewcommand{\@evenhead}{}% header blank
+  \renewcommand{\@oddfoot}{\hfill\thepage}%
+  \renewcommand{\@evenfoot}{\hfill\thepage}%
+}
+\renewcommand{\@oddfoot}{\hfill\thepage}%
+\renewcommand{\@evenfoot}{\hfill\thepage}%
+
 \long\def\abstract#1{\gdef\@abstract{#1}}
 %% 'begincmd' no longer used -- insert \makefrontmatter in the document instead. See above. 
 %\AtBeginDocument{\begincmd}
 \endinput
 %% 
-%% End of file `puthesis.cls'.
+%% End of file `quthesis.cls'.
