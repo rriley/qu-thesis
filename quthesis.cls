@@ -13,12 +13,6 @@
 \def\@copyrightyear{\number\year}
 \def\adviser#1{\gdef\@adviser{#1}}
 \long\def\@abstract{\@latex@error{No \noexpand\abstract given}\@ehc}
-\newcommand{\ps@quthesis}{
-  \renewcommand{\@oddhead}{}% header blank
-  \renewcommand{\@evenhead}{}% header blank
-  \renewcommand{\@oddfoot}{\hfill-\thepage-\hfill}%
-  \renewcommand{\@evenfoot}{\hfill-\thepage-\hfill}%
-}
 \newcommand*{\frontmatter}{
   \pagenumbering{roman}
   }
