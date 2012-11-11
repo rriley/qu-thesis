@@ -225,10 +225,10 @@
 \LoadClass{report}
 \setlength{\oddsidemargin}{.5in}   %{.4375in}
 \setlength{\evensidemargin}{.5in} %{.4375in}
-\setlength{\topmargin}{-.5in}  %{-.5625in}
-\setlength{\footskip}{.25in} % to put page number 3/4" from the bottom of the page (1/4" from bottom of body text)
+\setlength{\topmargin}{-.25in}  %{-.5625in}
 \setlength{\textheight}{9.2in}
 \setlength{\textwidth}{5.55in}
+%\setlength{\textwidth}{6in}
 
 %%% Alter LaTeX defaults to try to eliminate all widows and orphans
 \clubpenalty=10000
