@@ -64,6 +64,7 @@
 \def\department#1{\gdef\@dept{#1}}
 \def\college#1{\gdef\@college{#1}}
 \def\degree#1{\gdef\@degree{#1}}
+\def\degreetype#1{\gdef\@degreetype{#1}}
 \long\def\acknowledgements#1{\gdef\@acknowledgements{#1}}
 \def\dedication#1{\gdef\@dedication{#1}}
 \newcommand{\maketitlepage}{{
@@ -88,7 +89,7 @@
   \vspace{.6in}
   \extravspace{.6in}
   \begin{center}
-    A Thesis in \\
+    A \@degreetype\ in \\
     \@dept \\
     By \\
     \@author \\
@@ -119,7 +120,7 @@
   \begin{center}
   \Large \textbf{Committee}
   \end{center}
-  The thesis of \@author\ was reviewed and approved by the following:
+  The thesis of \textbf{\@author}\ was reviewed and approved by the following:
   We, the committee members listed below accept and approve the
   Thesis/Dissertation of the student named above. To the best of this
   committee’s knowledge, the Thesis/Dissertation conforms the requirements

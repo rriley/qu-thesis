@@ -9,19 +9,21 @@
 \documentclass[12pt,lot,lof]{quthesis}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
-%%%% Author & title page info
+%%%% Author, title page, and Committee info
 
 \title{Sample Dissertation for Qatar University}
 
 \submitted{June 2013}  % degree conferral date (January or June)
 \copyrightyear{2013}  % year in which the copyright is secured by publication of the dissertation.
 \author{First Middle Last} % your name
+\department{Computer Science and Engineering}
+\college{College of Engineering}
+\degreetype{Thesis} % Thesis for a master's, Dissertation for a PhD
+\degree{Master of Science} % Check with your graduate coordinator for the title of your program's degree.
 \adviser{John Smith}  % replace with the full name of your adviser
 \committeeone{Bob Jones} % name of first committee member
 \committeetwo{Mohamed Ahmed} % name of second committee member
-\department{Computer Science and Engineering}
-\college{College of Engineering}
-\degree{Master of Science}
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Tweak float placements
@@ -112,6 +114,28 @@ This document gives you an example of how to produce your Qatar
 University thesis in Latex.  Be sure to read the 
 Graduate Academic Manual~\cite{qugam} and make sure that your
 final output meets its requirements.
+
+You are not required to follow the sections titles included here by default.
+Check the manual (mentioned above) for details.
+
+\begin{table}[t]
+\centering
+\caption{This is a table caption.  It must be above the table.}
+\begin{tabular}{|c|c|}
+\hline
+Item 1 & Item 2 \\
+\hline
+Item 3 & Item 4 \\
+\hline
+\end{tabular}
+\end{table}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=3in]{samplefig.eps}
+\caption{This is a figure caption.  It must be below the figure.}
+\end{figure}
+
 
 \chapter{Background and/or Literature Survey}
 Your content goes here.
