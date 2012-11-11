@@ -12,6 +12,8 @@
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}}
 \def\@copyrightyear{\number\year}
 \def\adviser#1{\gdef\@adviser{#1}}
+\def\committeeone#1{\gdef\@commone{#1}}
+\def\committeetwo#1{\gdef\@commtwo{#1}}
 \long\def\@abstract{\@latex@error{No \noexpand\abstract given}\@ehc}
 \newcommand*{\frontmatter}{
   \pagenumbering{roman}
@@ -124,22 +126,23 @@
   of Qatar University, and we endorse this Thesis for examination.
 
   \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@adviser \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
 
   \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commone \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
     
   \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commtwo \hfill}
 
-  \vspace{0.1in}  
+  \vspace{0.1in}
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+
 }
 \newcommand*{\makeabstract}{
   \newpage
