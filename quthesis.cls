@@ -124,22 +124,22 @@
   of Qatar University, and we endorse this Thesis for examination.
 
   \vspace{0.2in}
-  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
 
   \vspace{0.1in}  
-  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
 
   \vspace{0.2in}
-  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
 
   \vspace{0.1in}  
-  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
     
   \vspace{0.2in}
-  \noindent \makebox[4.2in]{Name\hspace{0.3cm} \hrulefill}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \hrulefill}
 
   \vspace{0.1in}  
-  \noindent \makebox[4.2in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[1in]{\hrulefill}
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
 }
 \newcommand*{\makeabstract}{
   \newpage
@@ -227,8 +227,8 @@
 \setlength{\evensidemargin}{.5in} %{.4375in}
 \setlength{\topmargin}{-.5in}  %{-.5625in}
 \setlength{\footskip}{.25in} % to put page number 3/4" from the bottom of the page (1/4" from bottom of body text)
-\setlength{\textheight}{9in}
-\setlength{\textwidth}{6in}
+\setlength{\textheight}{9.2in}
+\setlength{\textwidth}{5.55in}
 
 %%% Alter LaTeX defaults to try to eliminate all widows and orphans
 \clubpenalty=10000
