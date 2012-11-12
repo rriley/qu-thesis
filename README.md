@@ -1,3 +1,11 @@
+Quick Start
+-----------
+1. Download the template from [here](https://github.com/rriley/qu-thesis/archive/master.zip).
+2. Unzip it.
+3. Edit thesis.tex, filling in the required information.
+4. Add your thesis material.
+5. Submit, defend, deposit, graduate!
+
 Intro
 -----
 
@@ -49,6 +57,12 @@ feel free to open an issue and I'll see if I can add the requested feature.
 Sadly, I am not available to provide general Latex support, I simply don't have
 time. If you need help learning or using Latex, there are many tutorials online
 that can help.  You can also try your advisor or fellow students.
+
+Patches
+-------
+If you have patches that you think would improve the quality of the template, please
+submit them!  The easiest way is to make a Github account, clone the repo, make your
+changs, and submit a pull request.
 
 Credits
 -------
