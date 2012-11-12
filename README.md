@@ -8,7 +8,6 @@ Quick Start
 
 Intro
 -----
-
 This project is a latex template for the Qatar University thesis format.
 The goal is to allow QU graduate students to have an easy way to put
 their thesis into the correct format.
