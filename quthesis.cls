@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{quthesis}
-         [2012/11/10 Qatar University Thesis class]
+         [2012/11/12 Qatar University Thesis Class]
 \RequirePackage{setspace}
 \newcounter{subyear}
 \setcounter{subyear}{\number\year}
@@ -243,7 +243,7 @@
 \setlength{\emergencystretch}{2em}
 
 %%% Some code to put the page number in the right place.
-%%% This is dirty and probably broken.
+%%% This is dirty and probably broken, but it works.
 \renewcommand{\ps@plain}{
   \renewcommand{\@oddhead}{}% header blank
   \renewcommand{\@evenhead}{}% header blank

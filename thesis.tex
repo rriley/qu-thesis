@@ -1,8 +1,15 @@
-% ****************************************************************************************** % Dissertation template and document class for Princeton University
+% ****************************************************************************************** 
+% Dissertation template and document class for Qatar University
+%
+% Based on a template for Princeton University
 % Original Author  : Jeffrey Scott Dwoskin <jdwoskin@princeton.edu>
 % Adapted from: http://www.math.princeton.edu/graduate/tex/puthesis.html
 %
 % Adapted for Qatar University by Ryan Riley <ryan.riley@qu.edu.qa>
+%
+% Questions/Comments should go to Ryan Riley, not Jeffrey.  Jeffrey has
+% nothing to do with Qatar University and would be confused if you
+% emailed him.
 % ****************************************************************************************** %
 
 
@@ -15,7 +22,7 @@
 
 \submitted{June 2013}  % degree conferral date (January or June)
 \copyrightyear{2013}  % year in which the copyright is secured by publication of the dissertation.
-\author{First Middle Last} % your name
+\author{First Middle Last} % your name, use the official name on your transcript.
 \department{Computer Science and Engineering}
 \college{College of Engineering}
 \degreetype{Thesis} % Thesis for a master's, Dissertation for a PhD
@@ -79,7 +86,7 @@
 % url package understands urls (with proper line-breaks) without hyperlinking them
 \usepackage{url}
 
-% appendix package to make the appendices look correct
+% appendix package to make the appendices correct in the TOC.
 \usepackage[titletoc]{appendix}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
@@ -96,6 +103,9 @@ Here are all the people you would like to thank.
 \dedication{
 Here are people to dedicate to.
 }
+
+% The template currently does not support a preface.
+% If you need the preface, email me to let me know.
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -121,8 +131,6 @@ final output meets its requirements.
 You are not required to follow the sections titles included here by default.
 Check the manual (mentioned above) for details.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
 \begin{table}[t]
 \centering
 \caption{This is a table caption.  It must be above the table.}
@@ -135,126 +143,32 @@ Item 3 & Item 4 \\
 \end{tabular}
 \end{table}
 
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \begin{figure}[t]
 \centering
 \includegraphics[width=3in]{samplefig.eps}
 \caption{This is a figure caption.  It must be below the figure.}
 \end{figure}
 
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \chapter{Background and/or Literature Survey}
 Your content goes here.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
 
 \chapter{Approach/Methodology}
 Your content goes here.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \chapter{Implementation/Research Findings}
 Your content goes here.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
 
 \chapter{Evaluation/Validation}
 Your content goes here.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \chapter{Discussion}
 Your content goes here.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \chapter{Conclusion}
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
+Your content goes here.
 
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-% Make the bibliography single spaced
 {
+% Make the bibliography single spaced
 \singlespacing
 \bibliographystyle{plain}
 
@@ -272,8 +186,9 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhon
 
 
 %%%%%%
-% Appendices if you need them. 
+% Appendices if you need them. Remove this section if you don't.
 \begin{appendices}
+
 % If you only have one appendix, uncomment the following line
 % to make sure it is just called "Appendix" and not "Appendix A".
 %\renewcommand*{\thechapter}{}
@@ -282,36 +197,8 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhon
 \chapter{First Appendix}
 Your content goes here.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
 \chapter{Second Appendix}
 Your content goes here.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nulla nisl, cursus et cursus ut, dictum et odio. Maecenas nunc eros, mattis eu molestie eu, adipiscing convallis eros. Morbi et elit in mi euismod convallis nec ac enim. Curabitur semper imperdiet erat, eget ultricies dolor pretium ut. Cras vestibulum lorem cursus turpis cursus vitae posuere turpis pretium. Suspendisse potenti. Quisque posuere augue vel eros consequat egestas. Vestibulum a diam est, nec egestas orci. Duis imperdiet fringilla sem a congue. Fusce viverra tincidunt tellus. Pellentesque pretium tellus ut sem dapibus laoreet. Aliquam enim augue, placerat at pharetra nec, tincidunt id odio. Suspendisse egestas dui augue, ut sollicitudin neque. Fusce eget quam velit. Suspendisse potenti. Cras pretium ante in lectus ullamcorper tempor.
-
-Quisque purus nisl, tincidunt quis tincidunt vel, fermentum rutrum sem. Nunc auctor erat eu nunc condimentum sit amet porta nunc viverra. In fringilla odio non velit facilisis tristique. In hac habitasse platea dictumst. In lorem orci, consectetur nec blandit vel, venenatis non tellus. Donec rutrum ultricies aliquet. Pellentesque iaculis lobortis dignissim. Nam ac dapibus elit. Pellentesque sodales nisi ut ipsum laoreet imperdiet et at dolor. Vestibulum lobortis, ligula eu porttitor convallis, justo sapien bibendum nibh, ac auctor justo erat ac est. Cras vel orci neque, sit amet ornare arcu. Aenean scelerisque tempus semper.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
-
-Donec nunc ipsum, posuere eu fermentum gravida, bibendum non urna. In aliquet interdum rhoncus. Phasellus accumsan nibh eu est hendrerit varius. Curabitur elementum fermentum ornare. Mauris scelerisque, justo ut mattis faucibus, mauris urna malesuada dolor, vel vulputate tellus sapien sagittis felis. Nulla volutpat bibendum laoreet. Pellentesque fermentum commodo odio sit amet dignissim. Sed hendrerit tellus id mi congue eget lobortis lectus venenatis.
-
-Donec blandit, justo ac scelerisque dignissim, turpis quam lacinia dui, ut lacinia dolor justo a nunc. Duis eleifend consequat semper. In hac habitasse platea dictumst. Duis aliquam quam non diam dapibus convallis. Praesent quis feugiat est. In hac habitasse platea dictumst. Curabitur sit amet justo sem, id molestie justo.
-
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sollicitudin rhoncus velit, quis hendrerit nulla rhoncus malesuada. Aliquam accumsan malesuada lectus, a scelerisque nulla sollicitudin molestie. Nullam porta egestas nunc et auctor. Nam et odio sit amet massa cursus vehicula ut non sem. Sed nunc ligula, eleifend laoreet blandit in, mollis eu lectus. Fusce fringilla massa massa. Cras id mi quis nibh gravida hendrerit quis et neque. Etiam vel diam arcu, id euismod eros. Praesent non enim eget lectus placerat sollicitudin eu non augue.
 
 \end{appendices}
 \end{document}
