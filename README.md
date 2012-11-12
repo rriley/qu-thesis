@@ -1,6 +1,6 @@
 Quick Start
 -----------
-1. Download the template from [here](https://github.com/rriley/qu-thesis/archive/master.zip).
+1. Download the latest copy of the template from [here](https://github.com/rriley/qu-thesis/archive/master.zip).
 2. Unzip it.
 3. Edit thesis.tex, filling in the required information.
 4. Add your thesis material.
@@ -47,9 +47,10 @@ I have no idea.  Try the Linux solution.
 Support
 -------
 If you find errors in this template, such as it not properly conforming to the standards,
-please report them using the issue tracker above.  Please don't email me, as your email
+please report them using the issue tracker at [Github](https://github.com/rriley/qu-thesis).
+Please don't email me, as your email
 is likely to get lost in the shuffle.  The issue tracker makes it easy for me to track
-current problems and propose solutions.
+current problems and implement solutions.
 
 If your department has additional requirements that this template doesn't handle,
 feel free to open an issue and I'll see if I can add the requested feature.
@@ -61,11 +62,12 @@ that can help.  You can also try your advisor or fellow students.
 Patches
 -------
 If you have patches that you think would improve the quality of the template, please
-submit them!  The easiest way is to make a Github account, clone the repo, make your
-changs, and submit a pull request.
+submit them!  The easiest way is to make a Github account, fork the repo, make your
+changes, and submit a pull request.  If that sounds too complicated, just email me
+your changes.
 
 Credits
 -------
 This template is based on a Princeton University template designed by Jeffrey Scott Dwoskin.
 
-It was modified and updated for the Qatar University format by Ryan Riley.
+It was modified and updated for the Qatar University format by Ryan Riley <ryan.riley@qu.edu.qa>.
