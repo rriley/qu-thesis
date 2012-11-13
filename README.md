@@ -24,7 +24,7 @@ Margins
 This template uses a 1.5" margin on the left and 1.25" on all other sides.
 The 1.5" margin is to allow for proper binding.
 
-When printing your thesis, make sure that choose "None" from page scaling,
+When printing your thesis, make sure to choose "None" from page scaling,
 otherwise additional margins will be added when you print.  (Which would be
 bad.)  Also make sure that the printer knows you are printing on A4 and not
 letter.  (Many printer drivers assume letter unless you configure them 
@@ -47,8 +47,7 @@ Support
 -------
 If you find errors in this template, such as it not properly conforming to the standards,
 please report them using the issue tracker at [Github](https://github.com/rriley/qu-thesis).
-Please don't email me, as your email
-is likely to get lost in the shuffle.  The issue tracker makes it easy for me to track
+The issue tracker makes it easy for me to track
 current problems and implement solutions.
 
 If your department has additional requirements that this template doesn't handle,
@@ -56,7 +55,7 @@ feel free to open an issue and I'll see if I can add the requested feature.
 
 Sadly, I am not available to provide general Latex support, I simply don't have
 time. If you need help learning or using Latex, there are many tutorials online
-that can help.  You can also try your advisor or fellow students.
+that can help.  You can also try your advisor or fellow grad students.
 
 Patches
 -------
