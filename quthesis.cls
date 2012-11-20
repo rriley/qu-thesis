@@ -54,7 +54,7 @@
 %%   to be declared from within the document itself. 
 \newcommand*{\makefrontmatter}{
 \bodyspacing
-\frontmatter\maketitlepage\makecommittee\makeabstract
+\frontmatter\maketitlepage\makedeclaration\makecommittee\makeabstract
 \maketoc\makelot\clearpage\makelof\clearpage\makelos
 \makeacknowledgements\makededication
 \clearpage\mainmatter
@@ -116,6 +116,25 @@
   \end{center}
   \clearpage
   }}
+\newcommand*{\makedeclaration}{
+  \newpage
+  %\addcontentsline{toc}{section}{Declaration}
+  \begin{center}
+  \Large \textbf{Declaration}
+  \end{center}
+  To the best of my knowledge, this thesis contains no material previously
+  published or written by another person or institution, except where due reference
+  is made in the text of the thesis. This thesis contains no material which has been
+  accepted for the award of any other degree in any university or other institution.
+
+  \vspace{0.2in}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@author \hfill}
+
+  \vspace{0.1in}
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+
+  \clearpage
+}
 \newcommand*{\makecommittee}{
   \newpage
   %\addcontentsline{toc}{section}{Committee}
@@ -125,7 +144,7 @@
   The thesis of \textbf{\@author}\ was reviewed and approved by the following:
 
   \bigskip
-  \noindent We, the committee members listed below accept and approve the
+  \noindent We, the committee members listed below, accept and approve the
   Thesis/Dissertation of the student named above. To the best of this
   committee’s knowledge, the Thesis/Dissertation conforms the requirements
   of Qatar University, and we endorse this Thesis for examination.
