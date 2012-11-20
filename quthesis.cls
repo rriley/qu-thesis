@@ -121,7 +121,9 @@
   \Large \textbf{Committee}
   \end{center}
   The thesis of \textbf{\@author}\ was reviewed and approved by the following:
-  We, the committee members listed below accept and approve the
+
+  \bigskip
+  \noindent We, the committee members listed below accept and approve the
   Thesis/Dissertation of the student named above. To the best of this
   committee’s knowledge, the Thesis/Dissertation conforms the requirements
   of Qatar University, and we endorse this Thesis for examination.
