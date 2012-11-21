@@ -151,7 +151,7 @@
 
   \ifdefined\@adviser
   \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@adviser \hfill}
+  \noindent \makebox[4.1in]{Supervisor\hspace{0.3cm} \@adviser \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
@@ -159,7 +159,7 @@
 
   \ifdefined\@coadviser
   \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@coadviser \hfill}
+  \noindent \makebox[4.1in]{Co-Supervisor\hspace{0.3cm} \@coadviser \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
