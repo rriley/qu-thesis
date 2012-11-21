@@ -12,8 +12,10 @@
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}}
 \def\@copyrightyear{\number\year}
 \def\adviser#1{\gdef\@adviser{#1}}
+\def\coadviser#1{\gdef\@coadviser{#1}}
 \def\committeeone#1{\gdef\@commone{#1}}
 \def\committeetwo#1{\gdef\@commtwo{#1}}
+\def\committeethree#1{\gdef\@commthree{#1}}
 \long\def\@abstract{\@latex@error{No \noexpand\abstract given}\@ehc}
 \newcommand*{\frontmatter}{
   \pagenumbering{roman}
@@ -128,23 +130,45 @@
   committee’s knowledge, the Thesis/Dissertation conforms the requirements
   of Qatar University, and we endorse this Thesis for examination.
 
+  \ifdefined\@adviser
   \vspace{0.2in}
   \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@adviser \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \fi
 
+  \ifdefined\@coadviser
+  \vspace{0.2in}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@coadviser \hfill}
+
+  \vspace{0.1in}  
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \fi
+
+  \ifdefined\@commone
   \vspace{0.2in}
   \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commone \hfill}
 
   \vspace{0.1in}  
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \fi
     
+  \ifdefined\@commtwo
   \vspace{0.2in}
   \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commtwo \hfill}
 
   \vspace{0.1in}
   \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \fi
+
+  \ifdefined\@commthree
+  \vspace{0.2in}
+  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commthree \hfill}
+
+  \vspace{0.1in}
+  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \fi
 
 }
 \newcommand*{\makeabstract}{
