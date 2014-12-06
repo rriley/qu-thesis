@@ -97,6 +97,20 @@
 \pdfpagewidth = 210 true mm
 \pdfpageheight = 297 true mm
 
+% To allow for clickable (hyper-referencing) in-text citations, figure #s, 
+% and sections in-text referencing
+% By default, colors are off because your thesis should stand-alone
+% when printed.  However, it is nice to have the TOC clickable in the PDF.
+\usepackage[hidelinks]{hyperref} 
+\hypersetup{
+    colorlinks=false, % set true if you want colored links
+    linktoc=all,     % set to all if you want both sections and subsections linked
+    linkcolor=blue,  % choose some color if you want links to stand out
+    citecolor=green,
+	urlcolor=blue,
+	linktocpage,
+}
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Front-matter
 
