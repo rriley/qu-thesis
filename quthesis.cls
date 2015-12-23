@@ -11,6 +11,7 @@
   \else June\fi\fi}
 \def\copyrightyear#1{\gdef\@copyrightyear{#1}}
 \def\@copyrightyear{\number\year}
+\def\defensedate#1{\gdef\@defensedate{#1}}
 \def\adviser#1{\gdef\@adviser{#1}}
 \def\coadviser#1{\gdef\@coadviser{#1}}
 \def\committeeone#1{\gdef\@commone{#1}}
@@ -54,7 +55,7 @@
 %%   to be declared from within the document itself. 
 \newcommand*{\makefrontmatter}{
 \bodyspacing
-\frontmatter\maketitlepage\makedeclaration\makecommittee\makeabstract
+\frontmatter\maketitlepage\makecommittee\makeabstract
 \maketoc\makelot\clearpage\makelof\clearpage\makelos
 \makeacknowledgements\makededication
 \clearpage\mainmatter
@@ -65,6 +66,7 @@
 \def\departmentprefix#1{\gdef\@deptpref{#1}}
 \def\department#1{\gdef\@dept{#1}}
 \def\college#1{\gdef\@college{#1}}
+\def\collegedean#1{\gdef\@collegedean{#1}}
 \def\degree#1{\gdef\@degree{#1}}
 \def\degreetype#1{\gdef\@degreetype{#1}}
 \long\def\acknowledgements#1{\gdef\@acknowledgements{#1}}
@@ -110,79 +112,75 @@
   \end{center}  
   \clearpage
   }}
-\newcommand*{\makedeclaration}{
-  \newpage
-  %\addcontentsline{toc}{section}{Declaration}
-  \begin{center}
-  \Large \textbf{Declaration}
-  \end{center}
-  To the best of my knowledge, this thesis contains no material previously
-  published or written by another person or institution, except where due reference
-  is made in the text of the thesis. This thesis contains no material which has been
-  accepted for the award of any other degree in any university or other institution.
-
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@author \hfill}
-
-  \vspace{0.1in}
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
-
-  \clearpage
-}
 \newcommand*{\makecommittee}{
   \newpage
   %\addcontentsline{toc}{section}{Committee}
   \begin{center}
   \Large \textbf{Committee}
   \end{center}
-  The thesis of \textbf{\@author}\ was reviewed and approved by the following:
+  \noindent The members of the committee approve the thesis of \textbf{\@author}\ defended on \@defensedate:
 
   \bigskip
-  \noindent We, the committee members listed below, accept and approve the
-  Thesis/Dissertation of the student named above. To the best of this
-  committee’s knowledge, the Thesis/Dissertation conforms the requirements
-  of Qatar University, and we endorse this Thesis for examination.
 
+  \begin{flushright}
   \ifdefined\@adviser
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Supervisor\hspace{0.3cm} \@adviser \hfill}
+  \vspace{0.4in}
 
-  \vspace{0.1in}  
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \@adviser
+  
+  \@degreetype\ Supervisor
   \fi
 
   \ifdefined\@coadviser
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Co-Supervisor\hspace{0.3cm} \@coadviser \hfill}
+  \vspace{0.4in}
 
-  \vspace{0.1in}  
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \@coadviser
+  
+  \@degreetype\ Co-Supervisor
   \fi
 
   \ifdefined\@commone
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commone \hfill}
+  \vspace{0.4in}
 
-  \vspace{0.1in}  
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
-  \fi
-    
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \@commone
+  
+  Committee Member
+  \fi    
   \ifdefined\@commtwo
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commtwo \hfill}
+  \vspace{0.4in}
 
-  \vspace{0.1in}
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \@commtwo
+  
+  Committee Member
   \fi
-
   \ifdefined\@commthree
-  \vspace{0.2in}
-  \noindent \makebox[4.1in]{Name\hspace{0.3cm} \@commthree \hfill}
+  \vspace{0.4in}
 
-  \vspace{0.1in}
-  \noindent \makebox[4.1in]{Signature\hspace{0.3cm} \hrulefill} \hfill Date\hspace{0.3cm} \makebox[0.8in]{\hrulefill}
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \@commthree
+  
+  Committee Member
   \fi
-
+  \end{flushright}
+  
+  \vfill
+  
+  \noindent Approved:
+  
+  \vspace{0.4in}
+  
+  \noindent \makebox[3in]{\hrulefill}
+  
+  \noindent \@collegedean, Dean, \@college
 }
 \newcommand*{\makeabstract}{
   \newpage
