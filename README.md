@@ -12,10 +12,11 @@ This project is a latex template for the Qatar University thesis format.
 The goal is to allow QU graduate students to have an easy way to put
 their thesis into the correct format.
 
-This template is not official from QU, so I make no guarantees that it
+This template is not an official from QU, so I make no guarantees that it
 will comply with the format.  That said, I have done my best to follow
 the guidelines described by the Office of the Vice President of Academic
-Affairs, and I believe it follows the guidelines correct.
+Affairs, and I believe it follows the guidelines correctly.  In addition,
+multiple students have graduated using this template.
 You need to be sure that you check the [guidlines](http://www.qu.edu.qa/offices/vpcao/graduates/)
 for a QU thesis and that your final output matches.
 
