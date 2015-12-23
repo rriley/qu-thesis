@@ -1,6 +1,6 @@
 \NeedsTeXFormat{LaTeX2e}
 \ProvidesClass{quthesis}
-         [2012/11/12 Qatar University Thesis Class]
+         [2015/12/23 Qatar University Thesis Class]
 \RequirePackage{setspace}
 \newcounter{subyear}
 \setcounter{subyear}{\number\year}
@@ -78,33 +78,26 @@
   \end{center}
   \vspace{.3in}
   \begin{center}
-  Graduate Studies
-  \end{center}
-  \vspace{.3in}
-  \begin{center}
   \@college
   \end{center}
   \vspace{.6in}
   \begin{center}
     \textbf{\@title}
   \end{center}
+  \vspace{.3in}
+  \begin{center}
+      BY
+  \end{center}
+  \vspace{.3in}  
+  \begin{center}
+    \textbf{\@author}
+  \end{center}
   \vspace{.6in}
   \extravspace{.6in}
   \begin{center}
-    A \@degreetype\ in \\
-    \@dept \\
-    By \\
-    \@author \\
-  \end{center}
-  \vspace{.3in}
-  \extravspace{.3in}
-  \begin{center}
-	\copyright\ \@copyrightyear\ \@author  
-  \end{center}
-  \vspace{.3in}
-  \extravspace{.3in}
-  \begin{center}
-    Submitted in Partial Fulfillment \\
+    A \@degreetype\ Submitted to the Faculty of \\
+    \@college \\
+    in Partial Fulfillment \\
     of the Requirements \\
     for the Degree of \\
     \@degree \\
@@ -112,8 +105,9 @@
   \vspace{.3in}
   \extravspace{.3in}
   \begin{center}
-    \@submitted
-  \end{center}
+    \@submitted \\
+   \copyright\ \@copyrightyear\ \@author  
+  \end{center}  
   \clearpage
   }}
 \newcommand*{\makedeclaration}{
