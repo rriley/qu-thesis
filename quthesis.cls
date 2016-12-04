@@ -4,7 +4,9 @@
 \RequirePackage{setspace}
 \newcounter{subyear}
 \setcounter{subyear}{\number\year}
-\def\submitted#1{\gdef\@submitted{#1}}
+\def\abstractauthor#1{\gdef\@abstractauthor{#1}}
+\def\gradmonth#1{\gdef\@gradmonth{#1}}
+\def\gradyear#1{\gdef\@gradyear{#1}}
 \def\@submittedyear{\ifnum\month>10 \stepcounter{subyear}\thesubyear
   \else\thesubyear\fi}
 \def\@submittedmonth{\ifnum\month>10 January\else\ifnum\month>5 November
@@ -56,8 +58,8 @@
 \newcommand*{\makefrontmatter}{
 \bodyspacing
 \frontmatter\maketitlepage\makecommittee\makeabstract
+\makededication\makeacknowledgements
 \maketoc\makelot\clearpage\makelof\clearpage\makelos
-\makeacknowledgements\makededication
 \clearpage\mainmatter
 }
 \def\@submitted{\@submittedmonth~\@submittedyear}
@@ -68,6 +70,7 @@
 \def\college#1{\gdef\@college{#1}}
 \def\collegedean#1{\gdef\@collegedean{#1}}
 \def\degree#1{\gdef\@degree{#1}}
+\def\degreetitle#1{\gdef\@degreetitle{#1}}
 \def\degreetype#1{\gdef\@degreetype{#1}}
 \long\def\acknowledgements#1{\gdef\@acknowledgements{#1}}
 \def\dedication#1{\gdef\@dedication{#1}}
@@ -97,18 +100,18 @@
   \vspace{.6in}
   \extravspace{.6in}
   \begin{center}
-    A \@degreetype\ Submitted to the Faculty of \\
-    \@college \\
+    A \@degreetype\ Submitted to the Faculty of the \\
+    \MakeUppercase{\@college} \\
     in Partial Fulfillment \\
     of the Requirements \\
     for the Degree of \\
-    \@degree \\
+    \@degreetitle \\
   \end{center}
   \vspace{.3in}
   \extravspace{.3in}
   \begin{center}
-    \@submitted \\
-   \copyright\ \@copyrightyear\ \@author  
+    \@gradmonth\ \@gradyear \\
+   \copyright\ \@copyrightyear\ \@author. All Rights Reserved.
   \end{center}  
   \clearpage
   }}
@@ -118,7 +121,7 @@
   \begin{center}
   \Large \textbf{Committee}
   \end{center}
-  \noindent The members of the committee approve the thesis of \textbf{\@author}\ defended on \@defensedate:
+  \noindent The members of the committee approve the \@degreetype\ of \@author\ defended on \@defensedate:
 
   \bigskip
 
@@ -178,7 +181,7 @@
   
   \vspace{0.4in}
   
-  \noindent \makebox[3in]{\hrulefill}
+  \noindent \makebox[4.5in]{\hrulefill}
   
   \noindent \@collegedean, Dean, \@college
 }
@@ -188,6 +191,11 @@
   \begin{center}
   \Large \textbf{Abstract}
   \end{center}
+  \@abstractauthor, \@degree : \\
+  \@gradmonth : \@gradyear , \@degreetitle \\
+  Title: \@title \\
+  Supervisor of \@degreetype : \@adviser
+  
   \@abstract
   \clearpage
   }
@@ -215,7 +223,11 @@
     \begin{center}
       \Large \textbf{Dedication}
     \end{center}
-      \@dedication
+    \vfill
+    \begin{center}
+      \emph{\@dedication}
+    \end{center}
+    \vfill      
     \clearpage
   \fi
   }
