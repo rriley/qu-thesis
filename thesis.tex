@@ -18,7 +18,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Author, title page, and Committee info
 
-\title{Sample Dissertation for Qatar University}
+\title{Sample Things for Qatar University}
 \gradmonth{June} % Must be January or June
 \gradyear{2016}
 \copyrightyear{2016}  % year in which the copyright is secured by publication of the dissertation.
@@ -29,7 +29,7 @@
 \collegedean{Mudeer Kabeer} % Name of the Dean of your college
 \degreetype{Thesis} % Project, Thesis, or Dissertation
 \degree{Masters} % Masters or Doctorate
-\degreetitle{Master of Universe} % Check with your graduate coordinator for the title of your program's degree.
+\degreetitle{Master of the Universe} % Check with your graduate coordinator for the title of your program's degree.
 \adviser{John Smith}  % replace with the full name of your adviser
 %\coadviser{Nasir Ali} % co-adviser, if needed
 \committeeone{Bob Jones} % name of first committee member
@@ -116,6 +116,23 @@
 
 % This is used to make the college name uppercase on the first page
 \usepackage[utf8]{inputenc}
+
+% This is used to tweak the size/shape of chapter headings
+\usepackage{titlesec}
+\titleformat{\chapter}[block]{\centering \bfseries}{Chapter \thechapter:}{0.5em}{}
+
+\usepackage{tocloft}
+\renewcommand\cfttoctitlefont{\hfill\normalsize\bfseries}
+\renewcommand\cftaftertoctitle{\hfill\null}
+\renewcommand\contentsname{Table of Contents}
+
+\renewcommand\cftlottitlefont{\hfill\normalsize\bfseries}
+\renewcommand\cftafterlottitle{\hfill\null}
+
+\renewcommand\cftloftitlefont{\hfill\normalsize\bfseries}
+\renewcommand\cftafterloftitle{\hfill\null}
+
+
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
 %%%% Front-matter
