@@ -28,7 +28,7 @@
   }
 \newcommand*{\makelot}{}
 \newcommand*{\makelof}{}
-\newcommand*{\makelos}{}
+\newcommand*{\makeloa}{}
 \newcommand*{\maketoc}{
   % Add ToC to the pdfbookmarks as a section, but not to the ToC itself.
   % only if we have the hyperref command that is necessary
@@ -59,8 +59,8 @@
 \bodyspacing
 \frontmatter\maketitlepage\makecommittee\makeabstract
 \makededication\makeacknowledgements
-\maketoc\makelot\clearpage\makelof\clearpage\makelos
-\clearpage\mainmatter
+\maketoc\makelot\clearpage\makelof
+\clearpage\makeloa\clearpage\mainmatter
 }
 \def\@submitted{\@submittedmonth~\@submittedyear}
 \def\@dept{Mathematics}
@@ -231,6 +231,16 @@
     \clearpage
   \fi
   }
+\DeclareOption{loa}{\renewcommand*{\makeloa}{
+  {\hfill\normalsize\bfseries List of Symbols and Acronyms \hfill\null}
+  \printacronyms[include-classes=abbrev,name=Abbreviations,heading=none]
+  \ifdefined\phantomsection
+    % makes hyperref recognize this section properly for pdf links
+    \phantomsection
+  \else
+  \fi
+  \addcontentsline{toc}{section}{List of Abbreviations}
+}}
 \DeclareOption{lot}{\renewcommand*{\makelot}{
   \ifdefined\phantomsection
     % makes hyperref recognize this section properly for pdf links
@@ -245,19 +255,6 @@
   \else
   \fi
   \addcontentsline{toc}{section}{List of Figures}\listoffigures}}
-\DeclareOption{los}{
-  \renewcommand*{\makelos}{
-    \RequirePackage{losymbol}
-    \section*{List of Symbols\@mkboth {LIST OF SYMBOLS}{LIST OF SYMBOLS}}
-    \@starttoc{los}
-  \ifdefined\phantomsection
-    % makes hyperref recognize this section properly for pdf links
-    \phantomsection
-  \else
-  \fi
-    \addcontentsline{toc}{section}{List of Symbols}
-  }
-}
 \DeclareOption{singlespace}{
   \renewcommand*{\bodyspacing}{
   \singlespacing

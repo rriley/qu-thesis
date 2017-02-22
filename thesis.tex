@@ -132,6 +132,19 @@
 \renewcommand\cftloftitlefont{\hfill\normalsize\bfseries}
 \renewcommand\cftafterloftitle{\hfill\null}
 
+% Sample for declaring acronymn/abbreviations.
+\usepackage{acro}
+
+\DeclareAcronym{ny}{
+  short = NY ,
+  long  = New York ,
+  class = abbrev
+}
+\DeclareAcronym{la}{
+  short = LA ,
+  long  = Los Angeles ,
+  class = abbrev
+}
 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
@@ -199,6 +212,10 @@ A sample figure can be found in Figure~\ref{fig:example}.
 \caption{This is a figure caption.  It must be below the figure.}
 \label{fig:example}
 \end{figure}
+
+\section{How to Use Abbreviations}
+If you want a list of abbreviations or symbols, add ``loa'' to the documentclass
+options and then use them as so \ac{ny}, \ac{la}.
 
 \chapter{Background and/or Literature Survey}
 Your content goes here.
