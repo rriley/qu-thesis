@@ -83,7 +83,7 @@
   \end{center}
   \vspace{.3in}
   \begin{center}
-  \@college
+  \MakeUppercase{College of \@college}
   \end{center}
   \vspace{.6in}
   \begin{center}
@@ -100,8 +100,9 @@
   \vspace{.6in}
   \extravspace{.6in}
   \begin{center}
-    A \@degreetype\ Submitted to the Faculty of the \\
-    \MakeUppercase{\@college} \\
+    A \@degreetype\ Submitted to \\ 
+    the Faculty of the College of \\
+    \@college \\
     in Partial Fulfillment \\
     of the Requirements \\
     for the Degree of \\
@@ -117,9 +118,9 @@
   }}
 \newcommand*{\makecommittee}{
   \newpage
-  %\addcontentsline{toc}{section}{Committee}
+  %\addcontentsline{toc}{section}{Committee Page}
   \begin{center}
-  \Large \textbf{Committee}
+  \Large \textbf{Committee Page}
   \end{center}
   \noindent The members of the committee approve the \@degreetype\ of \@author\ defended on \@defensedate:
 
