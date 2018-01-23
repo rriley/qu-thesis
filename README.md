@@ -1,3 +1,9 @@
+Important Note
+--------------
+This template is unsupported and possibly out of date.  It may, or may not, meet the guidelines provided
+by Qatar University.  If you use this, you are on your own to make sure your final product conforms to
+the prescribed format.
+
 Quick Start
 -----------
 1. Download the latest copy of the template from [here](https://github.com/rriley/qu-thesis/archive/master.zip).
@@ -46,15 +52,15 @@ I have no idea.  Try the Linux solution.
 
 Support
 -------
-If you find errors in this template, such as it not properly conforming to the standards,
-please report them using the issue tracker at [Github](https://github.com/rriley/qu-thesis).
-The issue tracker makes it easy for me to track
-current problems and implement solutions.
+I have left Qatar University and am no longer employed there.  With that change, I am
+also no longer providing support for this template.  I am leaving it here for students
+who may wish to use it, but I won't be updating it myself to match any changes QU
+may make to the thesis format.  However, if someone else wants to take it over, please
+do.  You can fork this repository and let me know.  I'll update this README to point
+to you. Until that happens, I'll also accept patches from students that update the
+template to meet newer requirements.
 
-If your department has additional requirements that this template doesn't handle,
-feel free to open an issue and I'll see if I can add the requested feature.
-
-Sadly, I am not available to provide general Latex support, I simply don't have
+Sadly, I am also not available to provide general Latex support, I simply don't have
 time. If you need help learning or using Latex, there are many tutorials online
 that can help.  You can also try your advisor or fellow grad students.
 
@@ -69,4 +75,4 @@ Credits
 -------
 This template is based on a Princeton University template designed by Jeffrey Scott Dwoskin.
 
-It was modified and updated for the Qatar University format by Ryan Riley <ryan.riley@qu.edu.qa>.
+It was modified and updated for the Qatar University format by Ryan Riley.
