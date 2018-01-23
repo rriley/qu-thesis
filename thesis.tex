@@ -61,6 +61,7 @@
 	% N.B.: floatpagefraction MUST be less than topfraction !!
     \renewcommand{\dblfloatpagefraction}{0.66}	% require fuller float pages
 
+    \setlength{\textfloatsep}{52pt plus 2.0pt minus 4.0pt}
 % The documentclass already sets parameters to make a high penalty for widows and orphans. 
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\
@@ -208,7 +209,7 @@ Item 3 & Item 4 \\
 
 \section{How to Make Figures}
 A sample figure can be found in Figure~\ref{fig:example}.
-\begin{figure}[t]
+\begin{figure}[b]
 \centering
 \includegraphics[width=3in]{samplefig.eps}
 \caption{This is a figure caption.  It must be below the figure.}
