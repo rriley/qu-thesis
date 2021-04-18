@@ -4,6 +4,9 @@ This template is unsupported and possibly out of date.  It may, or may not, meet
 by Qatar University.  If you use this, you are on your own to make sure your final product conforms to
 the prescribed format.
 
+I've been informed that the there is [another QU Engineering LaTeX template available](https://github.com/Naheel-Azawy/qu-tad-template).
+That one may be more accurate and up to date.
+
 Quick Start
 -----------
 1. Download the latest copy of the template from [here](https://github.com/rriley/qu-thesis/archive/master.zip).
